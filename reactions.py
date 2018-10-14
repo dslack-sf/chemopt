@@ -2,6 +2,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL']='3'
 import tensorflow as tf
 import numpy as np
+import tensorflow_probability as tfp
 
 class ConstraintQuadratic:
     """Quadratic problem: f(x) = ||Wx - y||."""
@@ -82,7 +83,7 @@ class GMM:
         return self.m + self.cov + [self.coef]
 
     def __call__(self, x):
-        dist = [tf.contrib.distributions.MultivariateNormalDiag(
+        dist = [tfp.distributions.MultivariateNormalDiag(   #update to contain tfp
                     self.m[i], self.cov[i], name='MultVarNorm_{}'.format(i))
                 for i in range(self.ncoef)]
         p = tf.concat([tf.reshape(dist[i].pdf(x), [-1, 1])
@@ -248,6 +249,7 @@ class RealReaction:
         return y
 
     def __call__(self, x):
+        print(x)
         print('Set Reaction Condition:')
         real_x = self.x_convert(np.squeeze(x))
         for i in range(self.ndim):

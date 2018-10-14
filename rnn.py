@@ -8,6 +8,7 @@ from tensorflow.python.ops import array_ops
 from tensorflow.contrib.rnn import LSTMCell, LSTMStateTuple
 from tensorflow.contrib.rnn import MultiRNNCell
 from tensorflow.python.ops.math_ops import tanh
+import tensorflow_probability as tfp
 
 
 class MultiInputLSTM(LSTMCell):
@@ -109,7 +110,7 @@ class StochasticRNNCell(RNNCell):
                 out = tf.matmul(output, w) + b
                 mean, var = tf.split(out, [x_dim, x_dim ** 2], axis=1)
                 var = tf.reshape(var, [batch_size, x_dim, x_dim])
-                dist = tf.contrib.distributions.MultivariateNormalTriL(
+                dist = tfp.distributions.MultivariateNormalTriL(
                     mean, var, name='x_dist')
                 x = dist.sample()
 

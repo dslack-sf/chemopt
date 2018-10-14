@@ -1,0 +1,30 @@
+2018-10-14 16:22:53,367 [INFO] {'log_path': './log/', 'save_path': './ckpt/8_dim_quad/h128_s50_srnn/', 'batch_size': 128, 'hidden_size': 128, 'num_layers': 2, 'batch_norm': False, 'reuse': False, 'num_epochs': 1000, 'log_period': 100, 'evaluation_period': 1000, 'evaluation_epochs': 20, 'reaction_type': 'quad', 'norm_cov': 0.3, 'constraints': False, 'num_params': 82, 'instrument_error': None, 'num_steps': 10, 'unroll_length': 50, 'learning_rate': 0.001, 'optimizer': 'Adam', 'loss_type': 'oi', 'discount_factor': 0.97, 'opt_direction': 'min', 'policy': 'srnn'}
+2018-10-14 16:22:55,273 [INFO] Creating Model with fresh parameters.
+2018-10-14 16:25:36,909 [INFO] {'log_path': './log/', 'save_path': './ckpt/8_dim_quad/h128_s50_srnn/', 'batch_size': 128, 'hidden_size': 128, 'num_layers': 2, 'batch_norm': False, 'reuse': False, 'num_epochs': 1000, 'log_period': 100, 'evaluation_period': 1000, 'evaluation_epochs': 20, 'reaction_type': 'quad', 'norm_cov': 0.3, 'constraints': False, 'num_params': 82, 'instrument_error': None, 'num_steps': 50, 'unroll_length': 50, 'learning_rate': 0.001, 'optimizer': 'Adam', 'loss_type': 'oi', 'discount_factor': 0.97, 'opt_direction': 'min', 'policy': 'srnn'}
+2018-10-14 16:25:38,862 [INFO] Creating Model with fresh parameters.
+2018-10-14 16:26:48,338 [INFO] Epoch 99, Mean Error: 4.289
+2018-10-14 16:27:57,460 [INFO] Epoch 199, Mean Error: 0.457
+2018-10-14 16:29:06,545 [INFO] Epoch 299, Mean Error: 0.059
+2018-10-14 16:30:18,018 [INFO] Epoch 399, Mean Error: -0.004
+2018-10-14 16:31:32,031 [INFO] Epoch 499, Mean Error: -0.014
+2018-10-14 16:32:42,689 [INFO] Epoch 599, Mean Error: -0.022
+2018-10-14 16:33:55,077 [INFO] Epoch 699, Mean Error: -0.027
+2018-10-14 16:35:05,576 [INFO] Epoch 799, Mean Error: -0.034
+2018-10-14 16:36:20,779 [INFO] Epoch 899, Mean Error: -0.043
+2018-10-14 16:37:34,395 [INFO] Epoch 999, Mean Error: -0.047
+2018-10-14 16:37:48,761 [INFO] EVALUATION, Mean Error: -0.049
+2018-10-14 16:37:48,762 [INFO] Save current model ...
+2018-10-14 16:40:39,779 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-14 16:40:39,780 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-14 16:41:03,407 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-14 16:41:03,408 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-14 16:43:31,529 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-14 16:43:31,530 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-14 16:45:13,840 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-14 16:45:13,841 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-14 16:46:12,547 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-14 16:46:12,548 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-14 16:47:11,686 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-14 16:47:11,687 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-14 16:48:39,484 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-14 16:48:39,485 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999

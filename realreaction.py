@@ -9,6 +9,10 @@ from reactions import QuadraticEval, ConstraintQuadraticEval, RealReaction
 from logger import get_handlers
 from collections import namedtuple
 
+import pandas as pd
+
+NUM_DIMENSIONS = 82
+
 logging.basicConfig(level=logging.INFO, handlers=get_handlers())
 logger = logging.getLogger()
 
@@ -67,7 +71,7 @@ class StepOptimizer:
             raise FileNotFoundError('No checkpoint available')
 
     def get_init(self):
-        x = np.random.normal(loc=0.5, scale=0.2, size=(1, 3))
+        x = np.random.normal(loc=0.5, scale=0.2, size=(1, NUM_DIMENSIONS))
         x = np.maximum(np.minimum(x, 0.9), 0.1)
         y = np.array(self.func(x)).reshape(1, 1)
         init_state = [(np.zeros(s[0]), np.zeros(s[1]))
@@ -95,15 +99,45 @@ def main():
     config = json.load(config_file,
                        object_hook=lambda d:namedtuple('x', d.keys())(*d.values()))
 
-    param_names = ['voltage', 'flow_rate', 'pressure']
-    param_range = [(0.0, 5.0), (1.0, 12.0), (10, 100)]
-    func = RealReaction(num_dim = 3, param_range=param_range, param_names=param_names,
+    ## Load data, seperate labels
+    global preloaded_data_from_cvs
+
+    preloaded_data_from_cvs = pd.read_csv('trainingset.csv')
+    labels = pd.DataFrame()
+    labels['labels'] = preloaded_data_from_cvs['_out_crystalscore']
+    preloaded_data_from_cvs = preloaded_data_from_cvs.drop(['RunID_vial', '_out_crystalscore', '_rxn_organic-inchikey'], axis = 1)
+    new_labels = []
+    for val in labels['labels']: 
+        if val >= 3: new_labels.append(1)
+        else: new_labels.append(0)
+
+    labels = labels.drop('labels', axis = 1)
+    labels['labels'] = new_labels
+
+
+    print (len(preloaded_data_from_cvs.columns))
+    # update number of parameters to all those considred in the data set
+
+    param_names = []
+    param_range = []
+    for col in preloaded_data_from_cvs:
+        param_names.append(col)
+        param_range.append((preloaded_data_from_cvs[col].min(), preloaded_data_from_cvs[col].max()))
+
+
+    # param_names = ['voltage', 'flow_rate', 'pressure']
+    # param_range = [(0.0, 5.0), (1.0, 12.0), (10, 100)]
+
+    # Set param range to low - high of what we have in the data set
+
+    func = RealReaction(num_dim = len(param_names), param_range=param_range, param_names=param_names,
                         direction='max', logger=None)
 
     cell = rnn.StochasticRNNCell(cell=rnn.LSTM,
                                  kwargs={'hidden_size':config.hidden_size},
                                  nlayers=config.num_layers,
                                  reuse=config.reuse)
+
     optimizer = StepOptimizer(cell=cell, func=func, ndim=config.num_params,
                               nsteps=config.num_steps,
                               ckpt_path=config.save_path, logger=logger,
@@ -111,9 +145,9 @@ def main():
     x_array, y_array = optimizer.run()
 
     
-    # plt.figure(1)
-    # plt.plot(y_array)
-    # plt.show()
+    plt.figure(1)
+    plt.plot(y_array)
+    plt.show()
     
 if __name__ == '__main__':
     main()
