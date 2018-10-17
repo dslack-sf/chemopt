@@ -28,3 +28,20 @@
 2018-10-14 16:47:11,687 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
 2018-10-14 16:48:39,484 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
 2018-10-14 16:48:39,485 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-14 18:09:02,093 [INFO] {'log_path': './log/', 'save_path': './ckpt/8_dim_quad/h128_s50_srnn/', 'batch_size': 128, 'hidden_size': 128, 'num_layers': 2, 'batch_norm': False, 'reuse': False, 'num_epochs': 50000, 'log_period': 100, 'evaluation_period': 1000, 'evaluation_epochs': 20, 'reaction_type': 'quad', 'norm_cov': 0.3, 'constraints': False, 'num_params': 82, 'instrument_error': None, 'num_steps': 50, 'unroll_length': 50, 'learning_rate': 0.001, 'optimizer': 'Adam', 'loss_type': 'oi', 'discount_factor': 0.97, 'opt_direction': 'min', 'policy': 'srnn'}
+2018-10-14 18:09:04,005 [INFO] Creating Model with fresh parameters.
+2018-10-14 18:10:11,226 [INFO] Epoch 99, Mean Error: 4.222
+2018-10-14 18:11:19,372 [INFO] Epoch 199, Mean Error: 0.415
+2018-10-14 18:12:27,615 [INFO] Epoch 299, Mean Error: 0.068
+2018-10-14 18:13:36,625 [INFO] Epoch 399, Mean Error: 0.009
+2018-10-14 18:14:46,442 [INFO] Epoch 499, Mean Error: -0.005
+2018-10-14 18:15:56,197 [INFO] Epoch 599, Mean Error: -0.020
+2018-10-14 18:17:06,375 [INFO] Epoch 699, Mean Error: -0.023
+2018-10-14 18:18:16,613 [INFO] Epoch 799, Mean Error: -0.028
+2018-10-14 18:19:27,465 [INFO] Epoch 899, Mean Error: -0.033
+2018-10-14 19:22:59,141 [INFO] Epoch 999, Mean Error: -0.038
+2018-10-14 19:23:44,520 [INFO] EVALUATION, Mean Error: -0.041
+2018-10-14 19:23:44,521 [INFO] Save current model ...
+2018-10-14 19:27:32,552 [INFO] Epoch 1099, Mean Error: -0.043
+2018-10-14 19:31:19,177 [INFO] Epoch 1199, Mean Error: -0.047
+2018-10-14 19:35:07,116 [INFO] Epoch 1299, Mean Error: -0.053

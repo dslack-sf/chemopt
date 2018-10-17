@@ -3,6 +3,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL']='3'
 import tensorflow as tf
 import numpy as np
 import tensorflow_probability as tfp
+from sklearn.metrics.pairwise import euclidean_distances
 
 class ConstraintQuadratic:
     """Quadratic problem: f(x) = ||Wx - y||."""
@@ -230,11 +231,14 @@ class ConstraintQuadraticEval:
 
 class RealReaction:
     def __init__(self, num_dim, param_range, param_names=['x1', 'x2', 'x3'],
-                 direction='max', logger=None):
+                 direction='max', logger=None, discrete_data_points = None,
+                 discrete_yields = None):
         self.ndim = num_dim
         self.param_range = param_range
         self.param_names = param_names
         self.direction = direction
+        self.discrete_data_points = discrete_data_points
+        self.discrete_yields = discrete_yields
 
     def x_convert(self, x):
         real_x = np.zeros([self.ndim])
@@ -249,12 +253,19 @@ class RealReaction:
         return y
 
     def __call__(self, x):
-        print(x)
-        print('Set Reaction Condition:')
+        # print('Set Reaction Condition:')
         real_x = self.x_convert(np.squeeze(x))
-        for i in range(self.ndim):
-            print('{0}: {1:.3f}'.format(self.param_names[i], real_x[i]))
-        result = float(input('Input the reaction yield:'))
+
+        # for i in range(self.ndim):
+        #     print('{0}: {1:.3f}'.format(self.param_names[i], real_x[i]))
+
+        euc_distances = euclidean_distances(self.discrete_data_points, [real_x])
+ 
+        min_index = list(euc_distances).index(min(euc_distances))        
+        approximate_yield = self.discrete_yields['labels'][min_index]
+
+        result = approximate_yield
+        # result = float(input('Input the reaction yield:'))
         return self.y_convert(result)
 
     

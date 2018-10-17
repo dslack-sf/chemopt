@@ -1,0 +1,58 @@
+2018-10-17 09:40:18,406 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 09:40:18,407 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 09:41:46,746 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 09:41:46,747 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 09:42:48,974 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 09:42:48,974 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 09:43:27,302 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 09:43:27,303 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 09:47:14,329 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 09:47:14,329 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 09:47:35,566 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 09:47:35,567 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 09:48:12,520 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 09:48:12,521 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 09:49:36,473 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 09:49:36,474 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 09:49:50,631 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 09:49:50,632 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 09:50:10,329 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 09:50:10,330 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 09:50:51,175 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 09:50:51,176 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:16:40,449 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:16:40,450 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:17:44,995 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:17:44,996 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:18:38,610 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:18:38,611 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:20:29,607 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:20:29,608 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:20:50,259 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:20:50,260 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:22:03,549 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:22:03,550 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:22:35,564 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:22:35,565 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:22:51,403 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:22:51,404 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:24:55,349 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:24:55,349 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:25:40,967 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:25:40,968 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:27:28,704 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:27:28,705 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:28:44,270 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:28:44,271 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:29:01,702 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:29:01,703 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:30:13,458 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:30:13,458 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:30:37,737 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:30:37,738 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:32:38,039 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:32:38,040 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:34:42,581 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:34:42,582 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999
+2018-10-17 10:35:58,393 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999.
+2018-10-17 10:35:58,394 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-999

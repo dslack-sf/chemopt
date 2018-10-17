@@ -100,7 +100,6 @@ def main():
                        object_hook=lambda d:namedtuple('x', d.keys())(*d.values()))
 
     ## Load data, seperate labels
-    global preloaded_data_from_cvs
 
     preloaded_data_from_cvs = pd.read_csv('trainingset.csv')
     labels = pd.DataFrame()
@@ -108,16 +107,13 @@ def main():
     preloaded_data_from_cvs = preloaded_data_from_cvs.drop(['RunID_vial', '_out_crystalscore', '_rxn_organic-inchikey'], axis = 1)
     new_labels = []
     for val in labels['labels']: 
-        if val >= 3: new_labels.append(1)
-        else: new_labels.append(0)
+        if val >= 3: new_labels.append(val)
+        else: new_labels.append(val)
 
     labels = labels.drop('labels', axis = 1)
     labels['labels'] = new_labels
 
-
-    print (len(preloaded_data_from_cvs.columns))
     # update number of parameters to all those considred in the data set
-
     param_names = []
     param_range = []
     for col in preloaded_data_from_cvs:
@@ -125,13 +121,12 @@ def main():
         param_range.append((preloaded_data_from_cvs[col].min(), preloaded_data_from_cvs[col].max()))
 
 
-    # param_names = ['voltage', 'flow_rate', 'pressure']
-    # param_range = [(0.0, 5.0), (1.0, 12.0), (10, 100)]
 
     # Set param range to low - high of what we have in the data set
 
     func = RealReaction(num_dim = len(param_names), param_range=param_range, param_names=param_names,
-                        direction='max', logger=None)
+                        direction='max', logger=None, discrete_data_points = preloaded_data_from_cvs,
+                        discrete_yields = labels)
 
     cell = rnn.StochasticRNNCell(cell=rnn.LSTM,
                                  kwargs={'hidden_size':config.hidden_size},
