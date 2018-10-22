@@ -6,7 +6,7 @@
     "num_layers": 2,
     "batch_norm": false,
     "reuse": false,
-    "num_epochs": 50000,
+    "num_epochs": 10000,
     "log_period": 100,
     "evaluation_period": 1000,
     "evaluation_epochs": 20,
@@ -21,6 +21,6 @@
     "optimizer": "Adam",
     "loss_type": "oi",
     "discount_factor": 0.97,
-    "opt_direction": "min",
+    "opt_direction": "max",
     "policy": "srnn"
 }
