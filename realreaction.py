@@ -100,8 +100,8 @@ def main():
                        object_hook=lambda d:namedtuple('x', d.keys())(*d.values()))
 
     ## Load data, seperate labels
-
     preloaded_data_from_cvs = pd.read_csv('trainingset.csv')
+    preloaded_data_from_cvs = preloaded_data_from_cvs.loc[preloaded_data_from_cvs['_rxn_organic-inchikey'] == "UPHCENSIMPJEIS-UHFFFAOYSA-N"]
     preloaded_data_from_cvs = preloaded_data_from_cvs.sample(frac = 1).reset_index(drop=True)
     
     labels = pd.DataFrame()
