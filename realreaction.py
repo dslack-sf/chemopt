@@ -102,13 +102,16 @@ def main():
     ## Load data, seperate labels
 
     preloaded_data_from_cvs = pd.read_csv('trainingset.csv')
+    preloaded_data_from_cvs = preloaded_data_from_cvs.sample(frac = 1).reset_index(drop=True)
+    
     labels = pd.DataFrame()
     labels['labels'] = preloaded_data_from_cvs['_out_crystalscore']
     preloaded_data_from_cvs = preloaded_data_from_cvs.drop(['RunID_vial', '_out_crystalscore', '_rxn_organic-inchikey'], axis = 1)
     new_labels = []
+
+    # Adjust here if you want to change labels to 0 - 1 scaled values
     for val in labels['labels']: 
-        if val >= 3: new_labels.append(val)
-        else: new_labels.append(val)
+        new_labels.append(val/4.0)
 
     labels = labels.drop('labels', axis = 1)
     labels['labels'] = new_labels
@@ -119,10 +122,6 @@ def main():
     for col in preloaded_data_from_cvs:
         param_names.append(col)
         param_range.append((preloaded_data_from_cvs[col].min(), preloaded_data_from_cvs[col].max()))
-
-
-
-    # Set param range to low - high of what we have in the data set
 
     func = RealReaction(num_dim = len(param_names), param_range=param_range, param_names=param_names,
                         direction='max', logger=None, discrete_data_points = preloaded_data_from_cvs,
