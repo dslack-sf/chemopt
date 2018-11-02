@@ -72,7 +72,7 @@ class Optimizer:
             self.fx_array = self.fx_array.write(unroll_len, fx_final)
             self.x_array = self.x_array.write(unroll_len, x)
 
-        # Reset the state; should be called at the beginning of an epoch.
+        # Reset the statve; should be called at the beginning of an epoch.
         with tf.name_scope('reset'):
 
             variables = [x,] + constants

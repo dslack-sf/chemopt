@@ -258,11 +258,6 @@ class RealReaction:
     def __call__(self, x):
         # print('Set Reaction Condition:')
 
-        # for k in self.discounts:
-        #     self.discounts[k] = self.discounts[k] + self.discount_inc
-        #     if self.discounts[k] == 1:
-        #         del self.discounts[k]
-
         CLOSEST = 25
 
         real_x = self.x_convert(np.squeeze(x))
@@ -277,7 +272,6 @@ class RealReaction:
 
         closest_distances = euc_distances[indexes_of_smallest_values[:CLOSEST]]
 
-        # resulting_yields = (self.discrete_yields['labels'][indexes_of_smallest_values[:CLOSEST]])
         total = np.sum(closest_distances)
 
         average_distances = np.divide(closest_distances, total)

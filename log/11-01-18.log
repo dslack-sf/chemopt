@@ -1,0 +1,2 @@
+2018-11-01 15:41:33,079 [INFO] Reading model parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-7999.
+2018-11-01 15:41:33,080 [INFO] Restoring parameters from ./ckpt/8_dim_quad/h128_s50_srnn/-7999
