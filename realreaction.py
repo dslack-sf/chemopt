@@ -16,6 +16,9 @@ NUM_DIMENSIONS = 82
 logging.basicConfig(level=logging.INFO, handlers=get_handlers())
 logger = logging.getLogger()
 
+start_df = pd.read_csv('dylan/Center_Dataframe.csv')
+start_location = start_df.loc[[0]].as_matrix()
+start_location = np.delete(start_location, 0, 1)
 
 class StepOptimizer:
     def __init__(self, cell, func, ndim, nsteps, ckpt_path, logger, constraints):
@@ -71,8 +74,16 @@ class StepOptimizer:
             raise FileNotFoundError('No checkpoint available')
 
     def get_init(self):
+
+        ### Init is here!
+        # Want to choose correct starting location everytime
+        # if start_location:
         x = np.random.normal(loc=0.5, scale=0.2, size=(1, NUM_DIMENSIONS))
         x = np.maximum(np.minimum(x, 0.9), 0.1)
+        
+        x = start_location
+
+
         y = np.array(self.func(x)).reshape(1, 1)
         init_state = [(np.zeros(s[0]), np.zeros(s[1]))
                       for s in self.get_state_shapes()]
@@ -98,6 +109,7 @@ def main():
     config_file = open('./config.json')
     config = json.load(config_file,
                        object_hook=lambda d:namedtuple('x', d.keys())(*d.values()))
+
 
     ## Load data, seperate labels
     preloaded_data_from_cvs = pd.read_csv('trainingset.csv')

@@ -260,8 +260,8 @@ class RealReaction:
 
         real_x = self.x_convert(np.squeeze(x))
 
-        # for i in range(self.ndim):
-        #     print('{0}: {1:.3f}'.format(self.param_names[i], real_x[i]))
+        for i in range(self.ndim):
+            print('{0}: {1:.3f}'.format(self.param_names[i], real_x[i]))
      
         euc_distances = euclidean_distances(self.discrete_data_points, [real_x])
 
@@ -271,7 +271,7 @@ class RealReaction:
         # total = np.sum(closest_distances)
         # average_distances = np.divide(closest_distances, total)
 
-        result = np.dot(self.discrete_yields['labels'][indexes_of_smallest_values[:CLOSEST]], average_distances)
+        # result = np.dot(self.discrete_yields['labels'][indexes_of_smallest_values[:CLOSEST]], average_distances)
         
 
         # print (self.discrete_yields['labels'][indexes_of_smallest_values[:CLOSEST]])
@@ -279,7 +279,7 @@ class RealReaction:
         # approximate_yield = self.discrete_yields['labels'][min_index]
         # self.discrete_data_points = self.discrete_data_points.drop(self.discrete_data_points.index[min_index])
      
-        # result = float(input('Input the reaction yield:'))
+        result = float(input('Input the reaction yield:'))
         return self.y_convert(result)
 
     
