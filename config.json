@@ -15,7 +15,7 @@
     "constraints": false,
     "num_params": 82,
     "instrument_error": null,
-    "num_steps": 50,
+    "num_steps": 200,
     "unroll_length": 50,
     "learning_rate": 0.001,
     "optimizer": "Adam",
