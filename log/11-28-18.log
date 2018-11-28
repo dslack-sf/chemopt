@@ -35,3 +35,19 @@
 2018-11-28 10:39:30,134 [INFO] Restoring parameters from ./ckpt/higher_learning_rate/-1999
 2018-11-28 10:45:23,463 [INFO] Reading model parameters from ./ckpt/higher_learning_rate/-1999.
 2018-11-28 10:45:23,463 [INFO] Restoring parameters from ./ckpt/higher_learning_rate/-1999
+2018-11-28 10:58:19,479 [INFO] {'reaction_type': 'quad', 'num_epochs': 10000, 'hidden_size': 128, 'policy': 'srnn', 'optimizer': 'Adam', 'num_layers': 2, 'log_period': 100, 'instrument_error': None, 'num_steps': 50, 'num_params': 82, 'loss_type': 'oi', 'batch_norm': False, 'learning_rate': 0.001, 'reuse': False, 'norm_cov': 0.3, 'evaluation_epochs': 20, 'save_path': './ckpt/max/', 'opt_direction': 'max', 'constraints': False, 'unroll_length': 50, 'discount_factor': 0.97, 'log_path': './log/', 'evaluation_period': 1000, 'batch_size': 128}
+2018-11-28 10:58:21,304 [INFO] Creating Model with fresh parameters.
+2018-11-28 10:58:55,201 [INFO] {'num_epochs': 1000, 'reaction_type': 'quad', 'num_params': 82, 'loss_type': 'oi', 'evaluation_epochs': 20, 'log_path': './log/', 'constraints': False, 'norm_cov': 0.3, 'num_steps': 50, 'opt_direction': 'max', 'reuse': False, 'policy': 'srnn', 'save_path': './ckpt/max/', 'learning_rate': 0.001, 'hidden_size': 128, 'discount_factor': 0.97, 'instrument_error': None, 'evaluation_period': 1000, 'batch_size': 128, 'log_period': 100, 'unroll_length': 50, 'num_layers': 2, 'batch_norm': False, 'optimizer': 'Adam'}
+2018-11-28 10:58:57,077 [INFO] Creating Model with fresh parameters.
+2018-11-28 10:59:58,070 [INFO] Epoch 99, Mean Error: 3.652
+2018-11-28 11:00:58,150 [INFO] Epoch 199, Mean Error: 0.339
+2018-11-28 11:01:58,290 [INFO] Epoch 299, Mean Error: 0.047
+2018-11-28 11:02:58,398 [INFO] Epoch 399, Mean Error: 0.001
+2018-11-28 11:03:58,777 [INFO] Epoch 499, Mean Error: -0.010
+2018-11-28 11:04:59,129 [INFO] Epoch 599, Mean Error: -0.016
+2018-11-28 11:05:59,371 [INFO] Epoch 699, Mean Error: -0.027
+2018-11-28 11:06:59,791 [INFO] Epoch 799, Mean Error: -0.037
+2018-11-28 11:08:00,047 [INFO] Epoch 899, Mean Error: -0.040
+2018-11-28 11:09:00,321 [INFO] Epoch 999, Mean Error: -0.045
+2018-11-28 11:09:12,344 [INFO] EVALUATION, Mean Error: -0.048
+2018-11-28 11:09:12,344 [INFO] Save current model ...
