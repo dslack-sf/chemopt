@@ -110,7 +110,6 @@ def main():
     config = json.load(config_file,
                        object_hook=lambda d:namedtuple('x', d.keys())(*d.values()))
 
-
     ## Load data, seperate labels
     preloaded_data_from_cvs = pd.read_csv('trainingset.csv')
     preloaded_data_from_cvs = preloaded_data_from_cvs.loc[preloaded_data_from_cvs['_rxn_organic-inchikey'] == "UPHCENSIMPJEIS-UHFFFAOYSA-N"]
@@ -136,7 +135,7 @@ def main():
         param_range.append((preloaded_data_from_cvs[col].min(), preloaded_data_from_cvs[col].max()))
 
     func = RealReaction(num_dim = len(param_names), param_range=param_range, param_names=param_names,
-                        direction='max', logger=None, discrete_data_points = preloaded_data_from_cvs,
+                        direction='min', logger=None, discrete_data_points = preloaded_data_from_cvs,
                         discrete_yields = labels)
 
     cell = rnn.StochasticRNNCell(cell=rnn.LSTM,

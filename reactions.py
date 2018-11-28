@@ -258,6 +258,7 @@ class RealReaction:
     def __call__(self, x):
         # print('Set Reaction Condition:')
 
+        CLOSEST = 10
         real_x = self.x_convert(np.squeeze(x))
 
         for i in range(self.ndim):
@@ -267,12 +268,13 @@ class RealReaction:
 
         indexes_of_smallest_values = np.argsort(np.squeeze(euc_distances))
 
-        # closest_distances = euc_distances[indexes_of_smallest_values[:CLOSEST]]
-        # total = np.sum(closest_distances)
-        # average_distances = np.divide(closest_distances, total)
+        closest_distances = euc_distances[indexes_of_smallest_values[:CLOSEST]]
+        total = np.sum(closest_distances)
+        average_distances = np.divide(closest_distances, total)
 
-        # result = np.dot(self.discrete_yields['labels'][indexes_of_smallest_values[:CLOSEST]], average_distances)
+        result = np.dot(self.discrete_yields['labels'][indexes_of_smallest_values[:CLOSEST]], average_distances)
         
+        # print (result)
 
         # print (self.discrete_yields['labels'][indexes_of_smallest_values[:CLOSEST]])
         # print (end)

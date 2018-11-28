@@ -27,3 +27,11 @@
 2018-11-28 09:58:51,452 [INFO] Epoch 2099, Mean Error: -0.089
 2018-11-28 09:59:51,920 [INFO] Epoch 2199, Mean Error: -0.091
 2018-11-28 10:00:52,704 [INFO] Epoch 2299, Mean Error: -0.091
+2018-11-28 10:37:42,058 [INFO] Reading model parameters from ./ckpt/higher_learning_rate/-1999.
+2018-11-28 10:37:42,059 [INFO] Restoring parameters from ./ckpt/higher_learning_rate/-1999
+2018-11-28 10:39:02,734 [INFO] Reading model parameters from ./ckpt/higher_learning_rate/-1999.
+2018-11-28 10:39:02,735 [INFO] Restoring parameters from ./ckpt/higher_learning_rate/-1999
+2018-11-28 10:39:30,133 [INFO] Reading model parameters from ./ckpt/higher_learning_rate/-1999.
+2018-11-28 10:39:30,134 [INFO] Restoring parameters from ./ckpt/higher_learning_rate/-1999
+2018-11-28 10:45:23,463 [INFO] Reading model parameters from ./ckpt/higher_learning_rate/-1999.
+2018-11-28 10:45:23,463 [INFO] Restoring parameters from ./ckpt/higher_learning_rate/-1999
