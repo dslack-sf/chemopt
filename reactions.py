@@ -258,8 +258,6 @@ class RealReaction:
     def __call__(self, x):
         # print('Set Reaction Condition:')
 
-        CLOSEST = 25
-
         real_x = self.x_convert(np.squeeze(x))
 
         # for i in range(self.ndim):
@@ -268,20 +266,16 @@ class RealReaction:
         euc_distances = euclidean_distances(self.discrete_data_points, [real_x])
 
         indexes_of_smallest_values = np.argsort(np.squeeze(euc_distances))
-        print (indexes_of_smallest_values[:CLOSEST])
 
-        closest_distances = euc_distances[indexes_of_smallest_values[:CLOSEST]]
-
-        total = np.sum(closest_distances)
-
-        average_distances = np.divide(closest_distances, total)
+        # closest_distances = euc_distances[indexes_of_smallest_values[:CLOSEST]]
+        # total = np.sum(closest_distances)
+        # average_distances = np.divide(closest_distances, total)
 
         result = np.dot(self.discrete_yields['labels'][indexes_of_smallest_values[:CLOSEST]], average_distances)
         
 
         # print (self.discrete_yields['labels'][indexes_of_smallest_values[:CLOSEST]])
         # print (end)
-  
         # approximate_yield = self.discrete_yields['labels'][min_index]
         # self.discrete_data_points = self.discrete_data_points.drop(self.discrete_data_points.index[min_index])
      
