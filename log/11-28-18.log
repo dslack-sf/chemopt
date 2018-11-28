@@ -1,0 +1,29 @@
+2018-11-28 09:37:18,642 [INFO] {'loss_type': 'oi', 'instrument_error': None, 'evaluation_epochs': 20, 'evaluation_period': 1000, 'reaction_type': 'quad', 'save_path': './ckpt/higher_learning_rate/', 'norm_cov': 0.3, 'num_layers': 2, 'policy': 'srnn', 'discount_factor': 0.97, 'log_period': 100, 'log_path': './log/', 'optimizer': 'Adam', 'num_epochs': 10000, 'unroll_length': 50, 'constraints': False, 'reuse': False, 'num_params': 82, 'batch_size': 128, 'opt_direction': 'min', 'hidden_size': 128, 'batch_norm': False, 'learning_rate': 0.001, 'num_steps': 50}
+2018-11-28 09:37:20,480 [INFO] Creating Model with fresh parameters.
+2018-11-28 09:38:21,354 [INFO] Epoch 99, Mean Error: 4.120
+2018-11-28 09:39:21,347 [INFO] Epoch 199, Mean Error: 0.291
+2018-11-28 09:40:21,338 [INFO] Epoch 299, Mean Error: 0.029
+2018-11-28 09:41:21,317 [INFO] Epoch 399, Mean Error: 0.012
+2018-11-28 09:42:21,415 [INFO] Epoch 499, Mean Error: -0.000
+2018-11-28 09:43:21,601 [INFO] Epoch 599, Mean Error: -0.009
+2018-11-28 09:44:21,848 [INFO] Epoch 699, Mean Error: -0.020
+2018-11-28 09:45:22,072 [INFO] Epoch 799, Mean Error: -0.030
+2018-11-28 09:46:22,371 [INFO] Epoch 899, Mean Error: -0.040
+2018-11-28 09:47:22,644 [INFO] Epoch 999, Mean Error: -0.045
+2018-11-28 09:47:34,647 [INFO] EVALUATION, Mean Error: -0.049
+2018-11-28 09:47:34,647 [INFO] Save current model ...
+2018-11-28 09:48:35,129 [INFO] Epoch 1099, Mean Error: -0.052
+2018-11-28 09:49:35,406 [INFO] Epoch 1199, Mean Error: -0.056
+2018-11-28 09:50:35,811 [INFO] Epoch 1299, Mean Error: -0.063
+2018-11-28 09:51:36,290 [INFO] Epoch 1399, Mean Error: -0.065
+2018-11-28 09:52:36,838 [INFO] Epoch 1499, Mean Error: -0.068
+2018-11-28 09:53:37,256 [INFO] Epoch 1599, Mean Error: -0.071
+2018-11-28 09:54:37,694 [INFO] Epoch 1699, Mean Error: -0.073
+2018-11-28 09:55:38,018 [INFO] Epoch 1799, Mean Error: -0.080
+2018-11-28 09:56:38,416 [INFO] Epoch 1899, Mean Error: -0.084
+2018-11-28 09:57:38,884 [INFO] Epoch 1999, Mean Error: -0.087
+2018-11-28 09:57:50,944 [INFO] EVALUATION, Mean Error: -0.088
+2018-11-28 09:57:50,944 [INFO] Save current model ...
+2018-11-28 09:58:51,452 [INFO] Epoch 2099, Mean Error: -0.089
+2018-11-28 09:59:51,920 [INFO] Epoch 2199, Mean Error: -0.091
+2018-11-28 10:00:52,704 [INFO] Epoch 2299, Mean Error: -0.091

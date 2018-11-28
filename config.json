@@ -1,6 +1,6 @@
 {
     "log_path": "./log/",
-    "save_path": "./ckpt/8_dim_quad/h128_s50_srnn/",
+    "save_path": "./ckpt/higher_learning_rate/",
     "batch_size": 128,
     "hidden_size": 128,
     "num_layers": 2,
@@ -15,12 +15,12 @@
     "constraints": false,
     "num_params": 82,
     "instrument_error": null,
-    "num_steps": 200,
+    "num_steps": 50,
     "unroll_length": 50,
     "learning_rate": 0.001,
     "optimizer": "Adam",
     "loss_type": "oi",
     "discount_factor": 0.97,
-    "opt_direction": "max",
+    "opt_direction": "min",
     "policy": "srnn"
 }
