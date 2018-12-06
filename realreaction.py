@@ -11,7 +11,7 @@ from collections import namedtuple
 
 import pandas as pd
 
-NUM_DIMENSIONS = 82
+NUM_DIMENSIONS = 3
 
 logging.basicConfig(level=logging.INFO, handlers=get_handlers())
 logger = logging.getLogger()
