@@ -187,3 +187,13 @@
 2018-12-05 19:41:05,944 [INFO] EVALUATION, Mean Error: -0.067
 2018-12-05 20:07:46,219 [INFO] Reading model parameters from ./ckpt/3d_model-7999.
 2018-12-05 20:07:46,220 [INFO] Restoring parameters from ./ckpt/3d_model-7999
+2018-12-05 20:18:21,488 [INFO] Reading model parameters from ./ckpt/3d_model-7999.
+2018-12-05 20:18:21,489 [INFO] Restoring parameters from ./ckpt/3d_model-7999
+2018-12-05 20:18:47,688 [INFO] Reading model parameters from ./ckpt/3d_model-7999.
+2018-12-05 20:18:47,689 [INFO] Restoring parameters from ./ckpt/3d_model-7999
+2018-12-05 20:19:16,444 [INFO] Reading model parameters from ./ckpt/3d_model-7999.
+2018-12-05 20:19:16,445 [INFO] Restoring parameters from ./ckpt/3d_model-7999
+2018-12-05 20:20:33,764 [INFO] Reading model parameters from ./ckpt/3d_model-7999.
+2018-12-05 20:20:33,766 [INFO] Restoring parameters from ./ckpt/3d_model-7999
+2018-12-05 20:21:43,617 [INFO] Reading model parameters from ./ckpt/3d_model-7999.
+2018-12-05 20:21:43,618 [INFO] Restoring parameters from ./ckpt/3d_model-7999

@@ -16,9 +16,7 @@ NUM_DIMENSIONS = 3
 logging.basicConfig(level=logging.INFO, handlers=get_handlers())
 logger = logging.getLogger()
 
-start_df = pd.read_csv('dylan/Center_Dataframe.csv')
-start_location = start_df.loc[[0]].as_matrix()
-start_location = np.delete(start_location, 0, 1)
+state_space = pd.read_csv('EtNH3Istateset.csv')
 
 class StepOptimizer:
     def __init__(self, cell, func, ndim, nsteps, ckpt_path, logger, constraints):
@@ -80,9 +78,6 @@ class StepOptimizer:
         # if start_location:
         x = np.random.normal(loc=0.5, scale=0.2, size=(1, NUM_DIMENSIONS))
         x = np.maximum(np.minimum(x, 0.9), 0.1)
-        
-        x = start_location
-
 
         y = np.array(self.func(x)).reshape(1, 1)
         init_state = [(np.zeros(s[0]), np.zeros(s[1]))
@@ -110,33 +105,15 @@ def main():
     config = json.load(config_file,
                        object_hook=lambda d:namedtuple('x', d.keys())(*d.values()))
 
-    ## Load data, seperate labels
-    preloaded_data_from_cvs = pd.read_csv('trainingset.csv')
-    preloaded_data_from_cvs = preloaded_data_from_cvs.loc[preloaded_data_from_cvs['_rxn_organic-inchikey'] == "UPHCENSIMPJEIS-UHFFFAOYSA-N"]
-    preloaded_data_from_cvs = preloaded_data_from_cvs.sample(frac = 1).reset_index(drop=True)
-    
-    labels = pd.DataFrame()
-    labels['labels'] = preloaded_data_from_cvs['_out_crystalscore']
-    preloaded_data_from_cvs = preloaded_data_from_cvs.drop(['RunID_vial', '_out_crystalscore', '_rxn_organic-inchikey'], axis = 1)
-    new_labels = []
-
-    # Adjust here if you want to change labels to 0 - 1 scaled values
-    for val in labels['labels']: 
-        new_labels.append(val/4.0)
-
-    labels = labels.drop('labels', axis = 1)
-    labels['labels'] = new_labels
-
     # update number of parameters to all those considred in the data set
     param_names = []
     param_range = []
-    for col in preloaded_data_from_cvs:
+    for col in state_space:
         param_names.append(col)
-        param_range.append((preloaded_data_from_cvs[col].min(), preloaded_data_from_cvs[col].max()))
+        param_range.append((state_space[col].min(), state_space[col].max()))
 
     func = RealReaction(num_dim = len(param_names), param_range=param_range, param_names=param_names,
-                        direction='min', logger=None, discrete_data_points = preloaded_data_from_cvs,
-                        discrete_yields = labels)
+                        direction='min', logger=None)
 
     cell = rnn.StochasticRNNCell(cell=rnn.LSTM,
                                  kwargs={'hidden_size':config.hidden_size},

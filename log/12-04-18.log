@@ -1,0 +1,2 @@
+2018-12-04 15:15:37,657 [INFO] Reading model parameters from ./ckpt/higher_learning_rate/-1999.
+2018-12-04 15:15:37,658 [INFO] Restoring parameters from ./ckpt/higher_learning_rate/-1999

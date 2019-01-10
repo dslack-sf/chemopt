@@ -242,6 +242,7 @@ class RealReaction:
         self.discounts = {}
         self.discount_inc = .01
         self.immediate_discount = .75
+        self.max_yield = 4.0 
 
     def x_convert(self, x):
         real_x = np.zeros([self.ndim])
@@ -251,36 +252,17 @@ class RealReaction:
         return real_x
 
     def y_convert(self, y):
+        y = (y / self.max_yield)
         if self.direction == 'max':
             return 1 - y
         return y
 
     def __call__(self, x):
-        # print('Set Reaction Condition:')
-
-        CLOSEST = 10
         real_x = self.x_convert(np.squeeze(x))
 
         for i in range(self.ndim):
             print('{0}: {1:.3f}'.format(self.param_names[i], real_x[i]))
-     
-        euc_distances = euclidean_distances(self.discrete_data_points, [real_x])
-
-        indexes_of_smallest_values = np.argsort(np.squeeze(euc_distances))
-
-        closest_distances = euc_distances[indexes_of_smallest_values[:CLOSEST]]
-        total = np.sum(closest_distances)
-        average_distances = np.divide(closest_distances, total)
-
-        result = np.dot(self.discrete_yields['labels'][indexes_of_smallest_values[:CLOSEST]], average_distances)
-        
-        # print (result)
-
-        # print (self.discrete_yields['labels'][indexes_of_smallest_values[:CLOSEST]])
-        # print (end)
-        # approximate_yield = self.discrete_yields['labels'][min_index]
-        # self.discrete_data_points = self.discrete_data_points.drop(self.discrete_data_points.index[min_index])
-     
+    
         result = float(input('Input the reaction yield:'))
         return self.y_convert(result)
 
