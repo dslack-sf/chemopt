@@ -14,3 +14,255 @@
 2019-01-10 12:43:48,794 [INFO] Restoring parameters from ./ckpt/3d_model-7999
 2019-01-10 12:45:11,514 [INFO] Reading model parameters from ./ckpt/3d_model-7999.
 2019-01-10 12:45:11,515 [INFO] Restoring parameters from ./ckpt/3d_model-7999
+2019-01-10 12:48:35,224 [INFO] {'log_path': './log/', 'save_path': './ckpt/', 'batch_size': 128, 'hidden_size': 128, 'num_layers': 2, 'batch_norm': False, 'reuse': False, 'num_epochs': 10000, 'log_period': 100, 'evaluation_period': 1000, 'evaluation_epochs': 20, 'reaction_type': 'quad', 'norm_cov': 0.3, 'constraints': False, 'num_params': 3, 'instrument_error': None, 'num_steps': 30, 'unroll_length': 30, 'learning_rate': 0.001, 'optimizer': 'Adam', 'loss_type': 'oi', 'discount_factor': 0.97, 'opt_direction': 'min', 'policy': 'srnn'}
+2019-01-10 12:48:36,694 [INFO] Creating Model with fresh parameters.
+2019-01-10 12:48:45,163 [INFO] Epoch 99, Mean Error: 4.860
+2019-01-10 12:48:54,384 [INFO] Epoch 199, Mean Error: 1.672
+2019-01-10 12:49:05,305 [INFO] Epoch 299, Mean Error: 1.207
+2019-01-10 12:49:14,389 [INFO] Epoch 399, Mean Error: 0.977
+2019-01-10 12:49:23,495 [INFO] Epoch 499, Mean Error: 0.788
+2019-01-10 12:49:33,980 [INFO] Epoch 599, Mean Error: 0.713
+2019-01-10 12:49:43,531 [INFO] Epoch 699, Mean Error: 0.736
+2019-01-10 12:49:53,354 [INFO] Epoch 799, Mean Error: 1.137
+2019-01-10 12:50:03,197 [INFO] Epoch 899, Mean Error: 0.619
+2019-01-10 12:50:12,477 [INFO] Epoch 999, Mean Error: 0.569
+2019-01-10 12:50:14,320 [INFO] EVALUATION, Mean Error: 0.512
+2019-01-10 12:50:14,320 [INFO] Save current model ...
+2019-01-10 12:50:23,683 [INFO] Epoch 1099, Mean Error: 0.539
+2019-01-10 12:50:32,846 [INFO] Epoch 1199, Mean Error: 0.530
+2019-01-10 12:50:41,936 [INFO] Epoch 1299, Mean Error: 0.598
+2019-01-10 12:50:50,328 [INFO] Epoch 1399, Mean Error: 0.539
+2019-01-10 12:50:58,743 [INFO] Epoch 1499, Mean Error: 0.495
+2019-01-10 12:51:07,150 [INFO] Epoch 1599, Mean Error: 0.476
+2019-01-10 12:51:15,565 [INFO] Epoch 1699, Mean Error: 0.474
+2019-01-10 12:51:24,001 [INFO] Epoch 1799, Mean Error: 0.457
+2019-01-10 12:51:32,402 [INFO] Epoch 1899, Mean Error: 0.451
+2019-01-10 12:51:40,843 [INFO] Epoch 1999, Mean Error: 0.432
+2019-01-10 12:51:42,515 [INFO] EVALUATION, Mean Error: 0.417
+2019-01-10 12:51:42,515 [INFO] Save current model ...
+2019-01-10 12:51:51,261 [INFO] Epoch 2099, Mean Error: 0.454
+2019-01-10 12:51:59,696 [INFO] Epoch 2199, Mean Error: 0.459
+2019-01-10 12:52:08,145 [INFO] Epoch 2299, Mean Error: 0.460
+2019-01-10 12:52:16,616 [INFO] Epoch 2399, Mean Error: 0.440
+2019-01-10 12:52:25,036 [INFO] Epoch 2499, Mean Error: 0.458
+2019-01-10 12:52:33,505 [INFO] Epoch 2599, Mean Error: 0.418
+2019-01-10 12:52:41,951 [INFO] Epoch 2699, Mean Error: 0.384
+2019-01-10 12:52:50,376 [INFO] Epoch 2799, Mean Error: 0.415
+2019-01-10 12:52:58,834 [INFO] Epoch 2899, Mean Error: 0.403
+2019-01-10 12:53:07,282 [INFO] Epoch 2999, Mean Error: 0.363
+2019-01-10 12:53:08,955 [INFO] EVALUATION, Mean Error: 0.393
+2019-01-10 12:53:08,955 [INFO] Save current model ...
+2019-01-10 12:53:17,640 [INFO] Epoch 3099, Mean Error: 0.362
+2019-01-10 12:53:26,127 [INFO] Epoch 3199, Mean Error: 0.296
+2019-01-10 12:53:34,548 [INFO] Epoch 3299, Mean Error: 0.310
+2019-01-10 12:53:43,033 [INFO] Epoch 3399, Mean Error: 0.248
+2019-01-10 12:53:51,480 [INFO] Epoch 3499, Mean Error: 0.278
+2019-01-10 12:54:00,076 [INFO] Epoch 3599, Mean Error: 0.167
+2019-01-10 12:54:08,524 [INFO] Epoch 3699, Mean Error: 0.119
+2019-01-10 12:54:17,000 [INFO] Epoch 3799, Mean Error: 0.077
+2019-01-10 12:54:25,441 [INFO] Epoch 3899, Mean Error: 0.056
+2019-01-10 12:54:33,884 [INFO] Epoch 3999, Mean Error: 0.045
+2019-01-10 12:54:35,579 [INFO] EVALUATION, Mean Error: 0.061
+2019-01-10 12:54:35,579 [INFO] Save current model ...
+2019-01-10 12:54:44,253 [INFO] Epoch 4099, Mean Error: 0.035
+2019-01-10 12:54:52,749 [INFO] Epoch 4199, Mean Error: -0.018
+2019-01-10 12:55:02,465 [INFO] Epoch 4299, Mean Error: -0.023
+2019-01-10 12:55:12,938 [INFO] Epoch 4399, Mean Error: -0.018
+2019-01-10 12:55:23,277 [INFO] Epoch 4499, Mean Error: -0.019
+2019-01-10 12:55:33,407 [INFO] Epoch 4599, Mean Error: -0.036
+2019-01-10 12:55:43,763 [INFO] Epoch 4699, Mean Error: -0.033
+2019-01-10 12:55:53,943 [INFO] Epoch 4799, Mean Error: -0.027
+2019-01-10 12:56:04,039 [INFO] Epoch 4899, Mean Error: -0.019
+2019-01-10 12:56:14,142 [INFO] Epoch 4999, Mean Error: -0.042
+2019-01-10 12:56:16,197 [INFO] EVALUATION, Mean Error: -0.033
+2019-01-10 12:56:16,197 [INFO] Save current model ...
+2019-01-10 12:56:26,606 [INFO] Epoch 5099, Mean Error: -0.028
+2019-01-10 12:56:36,686 [INFO] Epoch 5199, Mean Error: -0.026
+2019-01-10 12:56:46,834 [INFO] Epoch 5299, Mean Error: -0.036
+2019-01-10 12:56:56,877 [INFO] Epoch 5399, Mean Error: -0.043
+2019-01-10 12:57:06,864 [INFO] Epoch 5499, Mean Error: -0.045
+2019-01-10 12:57:16,998 [INFO] Epoch 5599, Mean Error: -0.053
+2019-01-10 12:57:27,458 [INFO] Epoch 5699, Mean Error: -0.026
+2019-01-10 12:57:37,659 [INFO] Epoch 5799, Mean Error: -0.039
+2019-01-10 12:57:47,794 [INFO] Epoch 5899, Mean Error: -0.039
+2019-01-10 12:57:57,963 [INFO] Epoch 5999, Mean Error: -0.044
+2019-01-10 12:58:00,019 [INFO] EVALUATION, Mean Error: -0.063
+2019-01-10 12:58:00,020 [INFO] Save current model ...
+2019-01-10 12:58:10,390 [INFO] Epoch 6099, Mean Error: -0.053
+2019-01-10 12:58:20,597 [INFO] Epoch 6199, Mean Error: 0.113
+2019-01-10 12:58:30,700 [INFO] Epoch 6299, Mean Error: -0.040
+2019-01-10 12:58:41,230 [INFO] Epoch 6399, Mean Error: -0.034
+2019-01-10 12:58:51,479 [INFO] Epoch 6499, Mean Error: -0.056
+2019-01-10 12:59:02,180 [INFO] Epoch 6599, Mean Error: -0.047
+2019-01-10 12:59:12,938 [INFO] Epoch 6699, Mean Error: -0.035
+2019-01-10 12:59:23,216 [INFO] Epoch 6799, Mean Error: -0.057
+2019-01-10 12:59:33,053 [INFO] Epoch 6899, Mean Error: -0.053
+2019-01-10 12:59:42,422 [INFO] Epoch 6999, Mean Error: -0.045
+2019-01-10 12:59:44,213 [INFO] EVALUATION, Mean Error: -0.036
+2019-01-10 12:59:52,998 [INFO] Epoch 7099, Mean Error: -0.058
+2019-01-10 13:00:01,991 [INFO] Epoch 7199, Mean Error: -0.046
+2019-01-10 13:00:11,213 [INFO] Epoch 7299, Mean Error: -0.051
+2019-01-10 13:00:20,994 [INFO] Epoch 7399, Mean Error: -0.057
+2019-01-10 13:00:30,177 [INFO] Epoch 7499, Mean Error: -0.030
+2019-01-10 13:00:39,647 [INFO] Epoch 7599, Mean Error: -0.061
+2019-01-10 13:00:49,334 [INFO] Epoch 7699, Mean Error: -0.050
+2019-01-10 13:00:59,796 [INFO] Epoch 7799, Mean Error: -0.070
+2019-01-10 13:01:09,283 [INFO] Epoch 7899, Mean Error: -0.072
+2019-01-10 13:01:19,018 [INFO] Epoch 7999, Mean Error: -0.070
+2019-01-10 13:01:20,826 [INFO] EVALUATION, Mean Error: -0.056
+2019-01-10 13:01:30,984 [INFO] Epoch 8099, Mean Error: -0.048
+2019-01-10 13:01:40,082 [INFO] Epoch 8199, Mean Error: -0.071
+2019-01-10 13:01:49,928 [INFO] Epoch 8299, Mean Error: -0.072
+2019-01-10 13:01:59,540 [INFO] Epoch 8399, Mean Error: -0.073
+2019-01-10 13:02:08,512 [INFO] Epoch 8499, Mean Error: -0.068
+2019-01-10 13:02:17,564 [INFO] Epoch 8599, Mean Error: -0.079
+2019-01-10 13:02:26,431 [INFO] Epoch 8699, Mean Error: -0.070
+2019-01-10 13:02:35,796 [INFO] Epoch 8799, Mean Error: -0.056
+2019-01-10 13:02:45,560 [INFO] Epoch 8899, Mean Error: -0.062
+2019-01-10 13:02:55,207 [INFO] Epoch 8999, Mean Error: -0.071
+2019-01-10 13:02:57,296 [INFO] EVALUATION, Mean Error: -0.082
+2019-01-10 13:02:57,296 [INFO] Save current model ...
+2019-01-10 13:03:07,642 [INFO] Epoch 9099, Mean Error: -0.067
+2019-01-10 13:03:18,308 [INFO] Epoch 9199, Mean Error: -0.075
+2019-01-10 13:03:28,225 [INFO] Epoch 9299, Mean Error: -0.073
+2019-01-10 13:03:37,700 [INFO] Epoch 9399, Mean Error: -0.083
+2019-01-10 13:03:47,927 [INFO] Epoch 9499, Mean Error: -0.079
+2019-01-10 13:03:57,237 [INFO] Epoch 9599, Mean Error: 1.342
+2019-01-10 13:04:06,353 [INFO] Epoch 9699, Mean Error: -0.069
+2019-01-10 13:04:15,495 [INFO] Epoch 9799, Mean Error: -0.087
+2019-01-10 13:04:24,501 [INFO] Epoch 9899, Mean Error: -0.082
+2019-01-10 13:04:33,679 [INFO] Epoch 9999, Mean Error: -0.091
+2019-01-10 13:04:35,425 [INFO] EVALUATION, Mean Error: -0.089
+2019-01-10 13:04:35,425 [INFO] Save current model ...
+2019-01-10 13:22:29,595 [INFO] Reading model parameters from ./ckpt/-9999.
+2019-01-10 13:22:29,596 [INFO] Restoring parameters from ./ckpt/-9999
+2019-01-10 13:22:58,025 [INFO] Reading model parameters from ./ckpt/-9999.
+2019-01-10 13:22:58,026 [INFO] Restoring parameters from ./ckpt/-9999
+2019-01-10 13:25:22,882 [INFO] Reading model parameters from ./ckpt/-9999.
+2019-01-10 13:25:22,884 [INFO] Restoring parameters from ./ckpt/-9999
+2019-01-10 13:37:58,433 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 13:37:58,434 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 13:39:28,226 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 13:39:28,227 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 13:41:11,560 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 13:41:11,561 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 13:54:22,434 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 13:54:22,434 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 13:54:43,419 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 13:54:43,420 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 13:54:56,749 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 13:54:56,750 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:00:54,869 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:00:54,870 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:01:54,389 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:01:54,389 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:04:54,165 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:04:54,166 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:06:32,774 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:06:32,774 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:07:06,249 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:07:06,250 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:07:45,620 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:07:45,621 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:08:03,643 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:08:03,644 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:08:49,067 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:08:49,067 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:11:38,194 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:11:38,195 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:16:46,508 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:16:46,510 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:17:05,993 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:17:05,994 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:19:27,756 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:19:27,757 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:19:59,991 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:19:59,992 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:20:54,590 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:20:54,591 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:21:12,549 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:21:12,550 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:21:42,838 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:21:42,839 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:23:55,686 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:23:55,686 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:24:43,264 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:24:43,265 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:25:09,876 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:25:09,877 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:26:04,425 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:26:04,426 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:26:25,420 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:26:25,421 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:26:57,116 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:26:57,117 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:27:48,907 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:27:48,908 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:27:59,933 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:27:59,934 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:28:44,299 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:28:44,300 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:29:19,372 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:29:19,373 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:30:06,769 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:30:06,770 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:30:48,239 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:30:48,240 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:32:45,085 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:32:45,086 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:33:07,422 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:33:07,423 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:39:43,288 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:39:43,289 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:40:15,702 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:40:15,703 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:43:18,033 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:43:18,033 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:44:05,387 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:44:05,388 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:44:33,415 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:44:33,416 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:44:48,550 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:44:48,551 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:45:59,384 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:45:59,385 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:47:01,592 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:47:01,593 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:49:24,993 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:49:24,994 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:49:42,050 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:49:42,050 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:50:34,190 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:50:34,190 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:51:12,435 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:51:12,436 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:51:43,885 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:51:43,886 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:56:01,380 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:56:01,381 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:56:36,675 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:56:36,676 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:57:59,048 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:57:59,049 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 14:58:25,945 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 14:58:25,946 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 15:01:29,248 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 15:01:29,249 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 15:03:34,945 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 15:03:34,945 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 15:04:40,224 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 15:04:40,224 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 15:05:08,154 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 15:05:08,155 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 15:05:33,794 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 15:05:33,795 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 15:05:54,459 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 15:05:54,460 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 15:06:19,632 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 15:06:19,633 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 15:06:44,841 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 15:06:44,841 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 15:07:06,875 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 15:07:06,876 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999
+2019-01-10 15:08:00,580 [INFO] Reading model parameters from ./ckpt/baseline/baseline_1/-9999.
+2019-01-10 15:08:00,580 [INFO] Restoring parameters from ./ckpt/baseline/baseline_1/-9999

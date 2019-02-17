@@ -251,6 +251,13 @@ class RealReaction:
             real_x[i] = x[i] * (b - a) + a
         return real_x
 
+    def x_normalize(self, x):
+        real_x = np.zeros([self.ndim])
+        for i in range(self.ndim):
+            a, b = self.param_range[i]
+            real_x[i] = (x[i] - a) / (b - a)
+        return real_x
+
     def y_convert(self, y):
         y = (y / self.max_yield)
         if self.direction == 'max':

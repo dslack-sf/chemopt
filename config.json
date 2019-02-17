@@ -1,6 +1,6 @@
 {
     "log_path": "./log/",
-    "save_path": "./ckpt/",
+    "save_path": "./ckpt/baseline/baseline_1/",
     "batch_size": 128,
     "hidden_size": 128,
     "num_layers": 2,
@@ -21,6 +21,6 @@
     "optimizer": "Adam",
     "loss_type": "oi",
     "discount_factor": 0.97,
-    "opt_direction": "max",
+    "opt_direction": "min",
     "policy": "srnn"
 }
